@@ -3,13 +3,12 @@
   
   
   function compare (a, b) {
-    var y = a.split("").sort().join(""),
-        z = b.split("").sort().join("");
-    alert(z === y
-        ? a + " and " + b + " are anagrams!"
-        : a + " and " + b + " are not anagrams."
+    var y = a.toLowerCase().split("").sort().join(""),
+        z = b.toLowerCase().split("").sort().join("");
+    alert(z == y
+        ? true
+        : false
     );
   }
 
 compare(x,y)
-
